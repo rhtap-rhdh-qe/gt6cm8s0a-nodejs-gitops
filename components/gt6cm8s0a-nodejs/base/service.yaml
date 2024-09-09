@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: gt6cm8s0a-nodejs
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: gt6cm8s0a-nodejs 
+  name: gt6cm8s0a-nodejs
+spec:
+  ports:
+  - port: 3001 
+    targetPort: 3001 
+  selector:
+    app.kubernetes.io/instance: gt6cm8s0a-nodejs 
